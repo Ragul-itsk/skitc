@@ -223,7 +223,7 @@ require_once("Includes/commonFunctions.php");
                         </div>
                         <div class="col-md-8">
                             <h3>SKITC</h3>
-                            <p>We SKITC OPC Private Limited are an innovative service Provider Company in Chennai.</p>
+                            <p>We SKITC are an innovative service Provider Company in Chennai.</p>
                             <a href="products.php"><span class="learn-more">Learn More</span></a>
                         </div>
 
@@ -762,7 +762,7 @@ require_once("Includes/commonFunctions.php");
         <div class="container">
             <div class="main_title">
                 <h2>About US</h2>
-                <p style="max-width: 700px;">SKITC OPC Private Limited are an innovative service Provider Company in Chennai, Tamil Nadu serving our clients nationwide. Our research and developing center is in Puducherry. We established our company in 2012. The company has developed more than 1000+ projects and also gained experienced in Software development, website development, Digital marketing for all types of business scale. <br>
+                <p style="max-width: 700px;">SKITC are an innovative service Provider Company in Chennai, Tamil Nadu serving our clients nationwide. Our research and developing center is in Puducherry. We established our company in 2012. The company has developed more than 1000+ projects and also gained experienced in Software development, website development, Digital marketing for all types of business scale. <br>
                     Our strength lies in our ability to create and position our team on every assignment. Our team gets ready to take up the challenge in time and deliver the results on time.</p>
             </div>
             <div class="work_inner row">

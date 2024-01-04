@@ -72,7 +72,7 @@ require_once("Includes/commonFunctions.php");
                         </div>
                         <div class="col-md-8 a_st">
                             <h3>SKITC</h3>
-                            <!-- <p>We SKITC OPC Private Limited are an innovative service Provider Company in Chennai.</p> -->
+                            <!-- <p>We SKITC are an innovative service Provider Company in Chennai.</p> -->
                             <a href="products.php"><span class="learn-more">Learn More</span></a>
                         </div>
 

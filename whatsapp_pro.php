@@ -95,7 +95,7 @@ require_once("Includes/wp_head.php");
 		<div class="container">
 			<div class="main_title">
 				<h2>HOW IT WORKS</h2>
-				<p style="max-width: 750px;">Our team at SKITC OPC Private Limited is highly equipped with talented and innovative professionals. Our teams are well trained for using WhatsApp Bulk sender sofware as a marketing tool to the best of their ability. At SKITC OPC Private Limited, we provide 24x7 support to your WhatsApp bulk sender service. Below are the key features that we practice at SKITC OPC Private Limited that makes us stand out from others
+				<p style="max-width: 750px;">Our team at SKITC is highly equipped with talented and innovative professionals. Our teams are well trained for using WhatsApp Bulk sender sofware as a marketing tool to the best of their ability. At SKITC, we provide 24x7 support to your WhatsApp bulk sender service. Below are the key features that we practice at SKITC that makes us stand out from others
 
 				</p>
 
@@ -110,7 +110,7 @@ require_once("Includes/wp_head.php");
 						<a href="#">
 							<h4>Innovative</h4>
 						</a>
-						<p>We SKITC OPC Private Limited are an innovative Whatsapp bulk messaging service Provider Company in Chennai focusing on providing a cost efficient business solution.</p>
+						<p>We SKITC are an innovative Whatsapp bulk messaging service Provider Company in Chennai focusing on providing a cost efficient business solution.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">

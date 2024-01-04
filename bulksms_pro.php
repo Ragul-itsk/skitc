@@ -111,7 +111,7 @@ require_once("Includes/bsms_head.php");
 		<div class="container">
 			<div class="main_title">
 				<h2>HOW IT WORKS</h2>
-				<p style="max-width: 750px;">Reach your customers even in remote villages through our BULK SMS software with less investment and more returns.We SKITC OPC Private Limited are an innovative Bulk SMS messaging service Provider Company in Chennai.Bulk SMS is the cheapest form of Marketing. You can reach all the customers within seconds even in remote villages or in metro cities. You can increase your sales vigorously.
+				<p style="max-width: 750px;">Reach your customers even in remote villages through our BULK SMS software with less investment and more returns.We SKITC are an innovative Bulk SMS messaging service Provider Company in Chennai.Bulk SMS is the cheapest form of Marketing. You can reach all the customers within seconds even in remote villages or in metro cities. You can increase your sales vigorously.
 
 				</p>
 

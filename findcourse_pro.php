@@ -51,7 +51,7 @@ require_once("Includes/fca_head.php");
 		<div class="container">
 			<div class="main_title">
 				<h2>How It work for you</h2>
-				<p>Best portal for Overseas education consultant. Get all institutions details throughout the world in a single click.Education is an essential aspect of the formation of a bright career for every student. Hence, we allow the student to get exposure at the global level, which is considered to be crucial in this globalization.We SKITC OPC Private Limited are an effective Portal developer in Chennai. Through this portal, Students can benefit in every step of their way in achieving their dreams that getting International degree.
+				<p>Best portal for Overseas education consultant. Get all institutions details throughout the world in a single click.Education is an essential aspect of the formation of a bright career for every student. Hence, we allow the student to get exposure at the global level, which is considered to be crucial in this globalization.We SKITC are an effective Portal developer in Chennai. Through this portal, Students can benefit in every step of their way in achieving their dreams that getting International degree.
 
 
 				</p>
@@ -304,7 +304,7 @@ require_once("Includes/fca_head.php");
 
 
 							<p>Automatically they can receive alerts, reminders, follow ups in email from our portal.
-								Studying abroad is connected with many misconceptions and SKITC OPC Pvt Ltd fills this gap of misconception and reality. We provide students, opportunities to recognise their skills, explore new dimensions and set perfect goal for them.
+								Studying abroad is connected with many misconceptions and SKITC fills this gap of misconception and reality. We provide students, opportunities to recognise their skills, explore new dimensions and set perfect goal for them.
 								Our database is rich and updated and rely on it to learn about universities and courses all the way across the globe and make life changing study-decisions. Students can choose from half a million course listings based out of many countries.</p>
 							<a class="main_btn" href="register.php">Get Started Now</a>
 						</div>
