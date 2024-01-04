@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /db-config/
+Disallow: /demo/itsk/
+Disallow: /forallin/
+Disallow: /email/
+Disallow: /new_skit/
+
+
+
+User-Agent: Googlebot
+Allow: .js
+Allow: .css
+Sitemap: https://itsk.in/sitemap.xml

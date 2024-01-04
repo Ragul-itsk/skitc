@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="asset/css/perfect-scrollbar.css">
+
+    <link rel="stylesheet" href="./asset/icons/style.css">
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="stylesheet" href="./asset/css/animate.min.css">
+
+    <title>Login Report</title>
+</head>
+
+<body class="body-bg-img">
+    <nav class="navbar fixed-top navbar-dark bg-transparent navbar-cus">
+        <div class="header-logo">
+            <span class="tm-menu menubar"></span>
+            <a class="navbar-brand" href="#">Task Management</a>
+        </div>
+        <div class="header-search">
+            <form>
+                <div class="input-group header-input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn" type="button">
+                            <span class="tm-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="header-timer outerClickPooverHide d-flex cp" id="checkOut">
+            <div class="time-hours">
+                <span>07</span>
+            </div>
+            <div class="time-semicolon">:</div>
+            <div class="time-minutes">
+                <span>40</span>
+            </div>
+            <div class="h6 align-self-start mt-3 ml-1">PM</div>
+            <div class="fs-14 pl-3">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                    </svg>
+                </span>
+                <span>CLOCK IN</span>
+            </div>
+        </div>
+        <div class="header-user">
+            <div class="header-user-inner outerClickPooverHide cp" id="userProfile">
+                <i class="tm-user menu-icon"></i>
+                <span class="user-name">Sk Info</span>
+            </div>
+        </div>
+    </nav>
+    <div class="layout-cont">
+        <div class="sidebar">
+            <ul class="nav sidebar-nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span class="menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                            </svg>
+                        </span>
+                        <p>Task Management</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html">
+                        <span class="menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-building" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                                <path
+                                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                            </svg>
+                        </span>
+                        <p>Company</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-sub-dropdown" href="#">
+                        <i class="tm-file-invoice menu-icon"></i>
+                        <p>Report</p>
+                        <span class="tm-angle-up dd-arrow"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <ul class="nav sub-sidebar-nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="taskreport.html">
+                                <i class="tm-file-edit menu-icon"></i>
+                                <p>Task Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loginreport.html">
+                                <i class="tm-user-circle menu-icon"></i>
+                                <p>Login Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="performreport.html">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z" />
+                                    </svg>
+                                </span>
+                                <p>Performance Report</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="complaint.html">
+                        <i class="tm-task-complete menu-icon"></i>
+                        <p>Complaint & Suggestions</p>
+                        <span class="sg-angle-up dd-arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="nab-tabs-wrapper pt-4">
+                <div class="col filter-wrapper pb-2 mb-2">
+                    <div class="row align-items-center">
+                        <div class="col-auto text-white d-flex align-items-center mr-2">
+                            <span class="fs-20">Complaint &amp; Suggestions</span>
+                            <span class="tm-star-line mt-1 ml-2"></span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="btn-group btn-add-cus ml-auto">
+                                <button type="button" class="btn fs-12 font-weight-bold rounded-0" data-toggle="modal"
+                                    data-target="#createComplaint">CREATE</button>
+                            </div>
+                        </div>
+                        <!-- <div class="col-7 filter-search-wrapper">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-filter rounded-0" placeholder="Filter and Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-light btn-search-filter rounded-0" type="button">
+                                            <span class="tm-search"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="table-responsive table-main-grid">
+                            <table class="table table-th-wsnw table-cus">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5px;">
+                                            <input type="checkbox" />
+                                        </th>
+                                        <th style="width: 60px;">
+                                            <span>
+                                                <i class="tm-gear-fill"></i>
+                                            </span>
+                                        </th>
+                                        <th>Name</th>
+                                        <th class="bg-mild-blue">Active</th>
+                                        <th>Deadline</th>
+                                        <th>Created by</th>
+                                        <th>Responsible Person</th>
+                                        <th>Project</th>
+                                        <th>Tags</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            <span class="dropright table-set-dropright">
+                                                <i class="tm-menu" data-toggle="dropdown" aria-expanded="false"></i>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#rightSaveModal">Create quotation</a>
+                                        </td>
+                                        <td class="bg-mild-blue">January 10, 9:54 am</td>
+                                        <td>
+                                            <span class="bg-secondary text-white py-1 px-2 rounded-15">No
+                                                deadline</span>
+                                        </td>
+                                        <td>Kamal Durai</td>
+                                        <td>Kamal Durai</td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            <span class="dropright table-set-dropright">
+                                                <i class="tm-menu" data-toggle="dropdown" aria-expanded="false"></i>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#rightSaveModal">Test</a>
+                                        </td>
+                                        <td class="bg-mild-blue">January 10, 9:54 am</td>
+                                        <td>
+                                            <span class="bg-secondary text-white py-1 px-2 rounded-15">No
+                                                deadline</span>
+                                        </td>
+                                        <td>Kamal Durai</td>
+                                        <td>Kamal Durai</td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            <span class="dropright table-set-dropright">
+                                                <i class="tm-menu" data-toggle="dropdown" aria-expanded="false"></i>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#rightSaveModal">Created</a>
+                                        </td>
+                                        <td class="bg-mild-blue">January 10, 9:54 am</td>
+                                        <td>
+                                            <span class="bg-danger text-white py-1 px-2 rounded-15">-2 Month</span>
+                                        </td>
+                                        <td>Kamal Durai</td>
+                                        <td>Kamal Durai</td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            <span class="dropright table-set-dropright">
+                                                <i class="tm-menu" data-toggle="dropdown" aria-expanded="false"></i>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#rightSaveModal">Testing</a>
+                                        </td>
+                                        <td class="bg-mild-blue">January 10, 9:54 am</td>
+                                        <td>
+                                            <span class="bg-danger text-white py-1 px-2 rounded-15">-2 Month</span>
+                                        </td>
+                                        <td>Kamal Durai</td>
+                                        <td>Kamal Durai</td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            <span class="dropright table-set-dropright">
+                                                <i class="tm-menu" data-toggle="dropdown" aria-expanded="false"></i>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#rightSaveModal">Test</a>
+                                        </td>
+                                        <td class="bg-mild-blue">January 10, 9:54 am</td>
+                                        <td>
+                                            <span class="bg-secondary text-white py-1 px-2 rounded-15">No
+                                                deadline</span>
+                                        </td>
+                                        <td>Kamal Durai</td>
+                                        <td>Kamal Durai</td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            <span class="dropright table-set-dropright">
+                                                <i class="tm-menu" data-toggle="dropdown" aria-expanded="false"></i>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#rightSaveModal">Created</a>
+                                        </td>
+                                        <td class="bg-mild-blue">January 10, 9:54 am</td>
+                                        <td>
+                                            <span class="bg-danger text-white py-1 px-2 rounded-15">-2 Month</span>
+                                        </td>
+                                        <td>Kamal Durai</td>
+                                        <td>Kamal Durai</td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                class="border border-secondary bg-light py-0 px-2 rounded-15"><span
+                                                    class="tm-plus"></span></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col table-main-grid-bottom d-flex justify-content-between">
+                            <div>
+                                <button class="btn btn-outline-secondary btn-sm rounded-circle">
+                                    <i class="tm-chevron-thin-left"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm rounded-circle">
+                                    <i class="tm-chevron-thin-right"></i>
+                                </button>
+                            </div>
+                            <div class="fs-13 d-flex align-items-center">
+                                <span>PAGES: 1</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <label for="exampleFormControlSelect1" class="fs-13 mb-0 mr-2">RECORDS:</label>
+                                <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                                    <option>5</option>
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>50</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side-bar">
+            <div class="right-side-bar-info">
+                <div class="right-side-bar-info-inner">
+                    <i class="right-side-icon tm-alarm"></i>
+                    <span class="header-info-notify">8</span>
+                </div>
+                <div class="right-side-bar-info-inner" data-toggle="modal" data-target="#workReport">
+                    <i class="right-side-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                            </path>
+                        </svg>
+                    </i>
+                    <!-- <span class="header-info-notify">8</span> -->
+                </div>
+                <div class="right-side-bar-info-inner">
+                    <i class="right-side-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z">
+                            </path>
+                        </svg>
+                    </i>
+                    <!-- <span class="header-info-notify">8</span> -->
+                </div>
+                <div class="right-side-bar-info-inner">
+                    <i class="right-side-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z">
+                            </path>
+                        </svg>
+                    </i>
+                    <span class="header-info-notify">2</span>
+                </div>
+                <div class="right-side-bar-info-inner">
+                    <i class="right-side-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z">
+                            </path>
+                        </svg>
+                    </i>
+                    <!-- <span class="header-info-notify">8</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="connection-status" style="display: none;">No server connection</div>
+
+    <div class="modal right fade" id="createComplaint" tabindex="-1" aria-labelledby="createComplaintLabel"
+        aria-hidden="true">
+        <div class="modal-dialog w-82">
+            <div class="modal-content">
+                <button type="button" class="close close-cus" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="tm-clear"></span>
+                </button>
+                <div class="modal-body add-form-modal">
+                    <div>
+                        <h4 class="mt-3">Complaint &amp; Suggestions</h4>
+                    </div>
+                    <div class="row main-form-content">
+                        <div class="col-12 card-form-wrapper">
+                            <div class="card card-form-cus rounded-0 border-0">
+                                <div class="card-body">
+                                    <div class="form-row align-items-center border-bottom mb-2">
+                                        <div class="col">
+                                            <input class="form-control form-control-lg border-0 focus-none pl-2"
+                                                type="text" placeholder="Title">
+                                        </div>
+                                        <!-- <div class="col-auto">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                                    <label class="form-check-label" for="autoSizingCheck">
+                                                        High Priority
+                                                    </label>
+                                                </div>
+                                            </div> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control border-0 resize-none" rows="5"
+                                            placeholder="Description"></textarea>
+                                        <div class="pl-3">
+                                            <span class="d-flex align-items-center cp">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+                                                </svg><span>File</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 mt-2 bg-light">
+                                        <div class="form-group form-group-cus row">
+                                            <label class="col-sm-2 col-form-label">Responsible person</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                        <div class="form-group form-group-cus row align-items-center">
+                                            <label class="col-sm-2 col-form-label">Create by</label>
+                                            <label class="col-sm-4 col-form-label">Kamal</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-white shadow justify-content-start">
+                    <button type="button" class="btn btn-cus fs-12 font-weight-bold rounded-0">CREATE COMPLAINT</button>
+                    <button type="button" class="btn btn-light fs-12 font-weight-bold rounded-0"
+                        data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal right fade" id="rightSaveModal" tabindex="-1" aria-labelledby="rightModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog w-82">
+            <div class="modal-content">
+                <button type="button" class="close close-cus" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="tm-clear"></span>
+                </button>
+                <div class="modal-body add-form-modal">
+                    <div>
+                        <h4 class="mt-3">Create quotation</h4>
+                    </div>
+                    <div class="row main-form-content">
+                        <div class="col-12 card-form-wrapper">
+                            <div class="card card-form-cus rounded-0 border-0">
+                                <div class="card-body">
+                                    <div class="form-row align-items-center border-bottom mb-2">
+                                        <div class="col">
+                                            <input class="form-control form-control-lg border-0 focus-none bg-white"
+                                                type="text" value="Task #18 - pending" disabled>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                                <label class="form-check-label" for="autoSizingCheck">
+                                                    High Priority
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control border-0 resize-none bg-white" rows="5"
+                                            disabled>Billling Software</textarea>
+                                        <span class="d-flex align-items-center cp">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+                                            </svg><span>File</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <button type="button"
+                                        class="btn btn-cus fs-12 font-weight-bold rounded-0">START</button>
+                                    <button type="button"
+                                        class="btn btn-cus fs-12 font-weight-bold rounded-0">FINISH</button>
+                                    <button type="button"
+                                        class="btn btn-light fs-12 font-weight-bold rounded-0">EDIT</button>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="nav nav-tabs nav-tabs-details" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="camment-tab" data-toggle="tab" href="#camment"
+                                            role="tab" aria-controls="camment" aria-selected="true">Camment</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="camment" role="tabpanel"
+                                        aria-labelledby="camment-tab">
+                                        <div class="card bg-white border-0 rounded-0">
+                                            <div class="card-body">
+                                                <div class="d-flex mb-3">
+                                                    <div class="bg-light px-3 py-2 rounded-15">
+                                                        <div class="d-flex align-items-end">
+                                                            <div class="text-primary mr-2">Kamal</div>
+                                                            <div class="text-muted fs-12">Jan 8 7:35pm</div>
+                                                        </div>
+                                                        <div>hi</div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mb-3">
+                                                    <div class="bg-light px-3 py-2 rounded-15">
+                                                        <div class="d-flex align-items-end">
+                                                            <div class="text-primary mr-2">Kamal Durai</div>
+                                                            <div class="text-muted fs-12">Jan 8 7:35pm</div>
+                                                        </div>
+                                                        <div>test</div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <div class="col-md-4 px-0 mr-3">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <button class="btn btn-success btn-sm rounded">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-white justify-content-start">
+                    <button type="button" class="btn btn-cus fs-12 font-weight-bold rounded-0">SAVE</button>
+                    <button type="button" class="btn btn-light fs-12 font-weight-bold rounded-0 border-0"
+                        data-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="workReport" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="workReportLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h6 class="modal-title" id="workReportLabel">Work report</h6>
+                    <h6 class="mb-0">3 January - 9 January</h6>
+                    <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row bg-light-blue py-3 mb-3">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <span class="font-weight-bold mr-2">From:</span>
+                                    <span class="mr-2">
+                                        <i class="tm-user bg-circle text-white"></i>
+                                    </span>
+                                    <span class="text-primary">Kaml Durai</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <span class="font-weight-bold mr-2">To:</span>
+                                    <span class="mr-2">
+                                        <i class="tm-user bg-circle text-white"></i>
+                                    </span>
+                                    <span class="text-primary">Kaml Durai</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12 px-0">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-link active" id="nav-report-tab" data-toggle="tab"
+                                            href="#nav-report" role="tab" aria-controls="nav-report"
+                                            aria-selected="true">Report</a>
+                                        <a class="nav-link" id="nav-plan-tab" data-toggle="tab" href="#nav-plan"
+                                            role="tab" aria-controls="nav-plan" aria-selected="false">Plan</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-report" role="tabpanel"
+                                        aria-labelledby="nav-report-tab">
+                                        <textarea class="form-control rounded-0" rows="5"></textarea>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-plan" role="tabpanel"
+                                        aria-labelledby="nav-plan-tab">
+                                        <textarea class="form-control rounded-0" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 px-0">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                    <label class="custom-file-label" for="validatedCustomFile">UPLOAD FILE</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-cus rounded-0 fs-12 font-weight-bold" data-dismiss="modal">SEND
+                        TO SUPERVISOR</button>
+                    <button type="button" class="btn btn-light rounded-0 fs-12 font-weight-bold"
+                        data-dismiss="modal">SAVE</button>
+                    <button type="button" class="btn btn-light btn btn-light rounded-0 fs-12 font-weight-bold">POSTPONE
+                        FOR AN HOUR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="asset/js/jquery.min.js"></script>
+
+    <script src="asset/js/popper.min.js"></script>
+
+    <script src="asset/js/bootstrap.min.js"></script>
+
+    <script src="asset/js/perfect-scrollbar.min.js"></script>
+
+    <script>
+        // Sidebar script start
+        $(".menubar").click(function () {
+            $(".layout-cont").toggleClass("sidebar-expand");
+            console.log("df");
+        });
+        $(".nav-sub-dropdown").click(function (e) {
+            $(this).children(".dd-arrow").toggleClass("dd-arrow-rotate");
+            $(this).parent().next().slideToggle();
+        });
+        // Sidebar script end
+
+        // Tooltip Trigger
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Custom scrollbar trigger in perfect scrollbar plugin
+        new PerfectScrollbar('.sidebar-nav');
+
+        // Filter Content Script Start
+        var filterCont = '<div class="filter-content animate__animated animate__pulse" style="width: 783.275px;"> <div class="row"> <div class="col-3 filter-sidebar"> <div class="filter-sidebar-item">In Progress</div><div class="filter-sidebar-item act">Completed</div><div class="filter-sidebar-item">Deferred</div><div class="filter-sidebar-item">Overdue</div><div class="filter-sidebar-item">Almost Overdue</div></div><div class="col-9 filter-field-container d-flex flex-column"> <div style="flex: 1 1 auto;"> <div class="row"> <div class="col-md-6"> <div class="form-group form-group-cus mb-3"> <label for="fromDate" class="form-label">From Date</label> <input type="text" class="form-control" id="fromDate"> </div></div><div class="col-md-6"> <div class="form-group form-group-cus mb-3"> <label for="toDate" class="form-label">To Date</label> <input type="text" class="form-control" id="toDate"> </div></div></div><div class="row"> <div class="col-md-6"> <div class="form-group form-group-cus mb-3"> <label for="userName" class="form-label">Employee Name</label> <input type="text" class="form-control" id="userName"> </div></div><div class="col-md-6"></div></div></div><div class="text-center"> <hr> <button class="btn btn-skyblue rounded-0 mr-3">Search</button> <button class="btn btn-outline-secondary btn-reset rounded-0" id="removeFilter">Reset</button> </div></div></div></div>';
+
+        $(".form-control-filter").click(function () {
+            $(".filter-content").remove();
+            var outWidth = $(this).parent().outerWidth();
+            $(this).parents('.filter-search-wrapper').append(filterCont);
+            $('.filter-content').css({
+                "width": outWidth + "px"
+            });
+        });
+        $("#removeFilter").click(function () {
+            $(".filter-content").remove();
+        });
+        $(document).on("click", function (e) {
+            if ($(e.target).closest(".filter-search-wrapper").length == 0) {
+                $(".filter-content").remove();
+            }
+        });
+        $(document).on('mousedown', '.btn-search-filter, .btn-reset', function () {
+            $(".filter-content").addClass('animate__backOutDown');
+            setTimeout(function () {
+                $(".filter-content").remove();
+            }, 500);
+        });
+        // Filter Content Script End
+
+        // Navbar background change in scolling script start
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            //console.log(scroll);
+            if (scroll >= 15) {
+                //console.log('a');
+                $(".navbar-cus").addClass("nav-fixed-bg");
+            } else {
+                //console.log('a');
+                $(".navbar-cus").removeClass("nav-fixed-bg");
+            }
+        });
+        // Navbar background change in scolling script end
+
+        // User profile custom popover script start
+        var userProfile = '<div class="bg-white rounded-15 shadow-sm d-flex align-items-center justify-content-start py-2 px-3 mb-2 cp"><span class="bg-circle bg-primary text-white mr-2"><i class="tm-user"></i></span><div class="mr-2"><div>Kamal Durai</div><div class="text-secondary fs-12">Administrator</div></div><div class="ml-auto"><a href="#" class="btn btn-sm btn-outline-primary rounded-pill py-0 fs-13">Profile</a></div></div><div class="d-flex col-gap-10"><div class="col bg-white rounded-15 shadow-sm d-flex align-items-center justify-content-start py-2 px-3 cp"><span class="bg-circle btn-group-sm bg-light-grey mr-2"><i class="tm-clock-history"></i></span><div class="fs-13">Login history</div></div><div class="col bg-white rounded-15 shadow-sm d-flex align-items-center justify-content-start py-2 px-3 cp"><span class="bg-circle btn-group-sm bg-light-grey mr-2"><i class="tm-box-arrow-right"></i></span><div class="fs-13">Log out</div></div></div>';
+
+        $(function () {
+            $('#userProfile').popover({
+                placement: 'bottom',
+                customClass: 'user-profile-popover',
+                html: true,
+                content: userProfile
+            });
+        })
+        // User profile custom popover script end
+
+        // Checkout time custom popover script start
+        var checkoutTime = '<div class="mb-3">You have not clocked out yet</div><div class="mb-3"><button class="btn btn-primary rounded-0">BREAK <span class="tm-pause-fill"></span></button><button class="btn btn-primary rounded-0" style="display: none;">CONTINUE <span class="tm-play-fill"></span></button><button class="btn btn-danger rounded-0 ml-2">CHECK OUT <span class="tm-stop-fill"></span></button></div><div class="mb-3"><textarea class="form-control rounded-0"></textarea></div></div><div><button class="btn btn-cus rounded-0">SAVE</button></div>';
+        $(function () {
+            $('#checkOut').popover({
+                placement: 'bottom',
+                customClass: 'checkout-time-popover',
+                html: true,
+                content: checkoutTime,
+                sanitize: false,
+            });
+        })
+        // Checkout time custom popover script end
+
+        // popover hide body outer click script start
+        $('body').on('click', function (e) {
+            $('.outerClickPooverHide').each(function () {
+                // hide any open popovers when the anywhere else in the body is clicked
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    $(this).popover('hide');
+                }
+            });
+        });
+            // popover hide body outer click script end
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+1.shopping cart package
+
+https://github.com/hardevine/laravelshoppingcart
+
+run "composer require hardevine/shoppingcart" in terminal
+
+2.laravel filemanager
+
+https://unisharp.github.io/laravel-filemanager/installation
+
+run these commands
+composer require unisharp/laravel-filemanager
+ php artisan vendor:publish --tag=lfm_config
+ php artisan vendor:publish --tag=lfm_public
+ php artisan storage:link

@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^itsk\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.itsk\.in$
+RewriteRule ^itsk\.in$ "https\:\/\/itsk\.in\/" [R=301,L]
+

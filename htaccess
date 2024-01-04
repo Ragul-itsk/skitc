@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} =on
+RewriteCond %{HTTP_HOST} ^itsk\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\itsk\in$
+RewriteRule .* http://itsk.in%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^www\itsk\.in$
+RewriteRule .* http://itsk.in%{REQUEST_URI} [R=301,L]
